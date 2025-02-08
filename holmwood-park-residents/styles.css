@@ -52,13 +52,12 @@ body {
     max-width: 1080px;
     margin: 40px auto;
     background: white;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
 .info-section h2, .info-section h3 {
-    color: #ffffff;
+    color: #0f00e2;
     margin-top: 20px;
 }
 
@@ -190,13 +189,16 @@ footer {
 
 /* Section Header Styling */
 .section-header {
-    background: #0056b3; /* Dark blue background */
-    color: white; /* White text for contrast */
+    background: #005501; /* Green background */
+    color: white;
     text-align: center;
     padding: 15px;
     font-size: 1.5em;
     font-weight: bold;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 100%; /* Full width within its parent container */
+    margin: 0; /* Ensure no unwanted margin */
+    width: 100%; /* Stretch full width of parent */
+    box-sizing: border-box; /* Prevent unwanted width overflow */
+    position: relative; /* Ensures it stays within the parent */
 }
