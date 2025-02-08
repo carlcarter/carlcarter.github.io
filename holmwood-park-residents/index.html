@@ -4,88 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holmwood Park Residents</title>
-    <link rel="stylesheet" href="https://www.lightningdesignsystem.com/assets/styles/salesforce-lightning-design-system.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="slds-grid slds-grid_align-center slds-p-around_medium slds-theme_shade">
-        <h1 class="slds-text-heading_large">Holmwood Park Residents</h1>
-        <p>Join us in taking an active role in our estate's management.</p>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <h1>Holmwood Park Residents</h1>
+        <p>Empowering homeowners to take control of our estate</p>
     </header>
 
-    <section class="slds-grid slds-wrap slds-grid_align-spread slds-p-around_medium">
-        <div class="slds-size_1-of-1 slds-large-size_1-of-2 slds-p-around_x-small">
-            <img src="images/estate1.jpeg" alt="Estate Image 1" class="slds-size_1-of-1 slds-rounded">
+    <!-- Image Gallery -->
+    <section class="gallery">
+        <img src="images/estate1.jpeg" alt="Estate View 1">
+        <img src="images/estate1.jpeg" alt="Estate View 2">
+        <img src="images/estate1.jpeg" alt="Estate View 3">
+    </section>
+
+    <section class="timeline">
+        <h2>How to Take Action</h2>
+    
+        <div class="timeline-step">
+            <span class="dot"></span>
+            <div class="step-content">
+                <h3>Step 1: Become a Member</h3>
+                <p>Submit a request to join as a voting member of the estate.</p>
+            </div>
         </div>
-        <div class="slds-size_1-of-1 slds-large-size_1-of-2 slds-p-around_x-small">
-            <img src="images/estate1.jpeg" alt="Estate Image 2" class="slds-size_1-of-1 slds-rounded">
+    
+        <div class="timeline-step">
+            <span class="dot"></span>
+            <div class="step-content">
+                <h3>Step 2: Apply as a Director</h3>
+                <p>Once you're a member, you can apply to become a director.</p>
+            </div>
+        </div>
+    
+        <div class="timeline-step">
+            <span class="dot"></span>
+            <div class="step-content">
+                <h3>Step 3: Request the Members List</h3>
+                <p>Request the member list to ensure transparency and engagement.</p>
+            </div>
+        </div>
+    
+        <div class="timeline-step">
+            <span class="dot"></span>
+            <div class="step-content">
+                <h3>Step 4: Engage with Residents</h3>
+                <p>Build community support and ensure residents are informed.</p>
+            </div>
+        </div>
+    
+        <div class="timeline-step">
+            <span class="dot"></span>
+            <div class="step-content">
+                <h3>Step 5: Participate in Decision-Making</h3>
+                <p>Work with other members to shape the future of the estate.</p>
+            </div>
         </div>
     </section>
 
-    <section class="slds-p-around_medium">
-        <div class="slds-card">
-            <div class="slds-card__header slds-grid">
-                <header class="slds-media slds-media_center slds-has-flexi-truncate">
-                <div class="slds-media__body">
-                    <h2 class="slds-card__header-title">
-                    <a href="#" class="slds-card__header-link slds-truncate" title="Become a Member">
-                        <span>Become a Member</span>
-                    </a>
-                    </h2>
-                </div>
-                </header>
-            </div>
-            <div class="slds-card__body slds-card__body_inner">
-                <p>To become a member and gain voting rights, copy and submit this letter:</p>
-                <pre class="slds-box slds-box_x-small slds-theme_shade">
-    Dear [Company Name],
-    I, [Your Name] residing at [Your Address], request membership in Holmwood Residents Limited.
-    As a qualifying homeowner, I would like to be recognized as a voting member.
-    Sincerely,  
-    [Your Name]
-                </pre>
-            </div>
-        </div>
-    </section>
-
-    <section class="slds-p-around_medium">
-        <div class="slds-card">
-            <div class="slds-card__header slds-grid">
-                <h2 class="slds-text-heading_medium slds-m-bottom_medium">Apply to Be a Director</h2>
-            </div>
-            <div class="slds-card__body">
-                <p>If you wish to join the board, submit the following letter:</p>
-                <pre class="slds-box slds-box_x-small slds-theme_shade">
+    <!-- Membership Section -->
+    <section class="section">
+        <h2 onclick="toggleSection('membership')">Become a Member +</h2>
+        <div class="content" id="membership">
+            <p>To become a member and gain voting rights, copy the letter below:</p>
+            <pre>
 Dear [Company Name],
-I, [Your Name] of [Your Address], would like to put myself forward as a director of Holmwood Residents Limited.
+I, [Your Name], residing at [Your Address], request membership in Holmwood Residents Limited.
+As a qualifying homeowner, I would like to be recognized as a voting member.
+Sincerely,  
+[Your Name]
+            </pre>
+        </div>
+    </section>
+
+    <!-- Director Application -->
+    <section class="section">
+        <h2 onclick="toggleSection('director')">Apply to Be a Director +</h2>
+        <div class="content" id="director">
+            <p>If you wish to join the board, copy and send this letter:</p>
+            <pre>
+Dear [Company Name],
+I, [Your Name], of [Your Address], would like to put myself forward as a director of Holmwood Residents Limited.
 I believe my experience in [Your Expertise] will be beneficial to the community.
 Best Regards,  
 [Your Name]
-                </pre>
-            </div>
+            </pre>
         </div>
     </section>
 
-    <section class="slds-p-around_medium">
-        <div class="slds-card">
-            <div class="slds-card__header slds-grid">
-                <h2 class="slds-text-heading_medium slds-m-bottom_medium">Request a List of Members</h2>
-            </div>
-            <div class="slds-card__body">
-                <p>To ensure transparency, you can request the list of existing members:</p>
-                <pre class="slds-box slds-box_x-small slds-theme_shade">
+    <!-- Request List of Members -->
+    <section class="section">
+        <h2 onclick="toggleSection('members-list')">Request a List of Members +</h2>
+        <div class="content" id="members-list">
+            <p>You can request the register of members using this template:</p>
+            <pre>
 Dear [Company Name],
 I formally request a copy of the register of members under my rights as a shareholder of Holmwood Residents Limited.
 Please provide this in line with the Companies Act 2006.
 Sincerely,  
 [Your Name]
-                </pre>
-            </div>
+            </pre>
         </div>
     </section>
 
-    <footer class="slds-theme_shade slds-p-around_medium slds-text-align_center">
-        <p>Contact us at <strong>[Your Email]</strong> for any questions.</p>
+    <!-- Footer -->
+    <footer>
+        <p>Contact us at <strong>[Your Email]</strong></p>
     </footer>
 
     <script src="script.js"></script>
