@@ -187,3 +187,16 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Section Header Styling */
+.section-header {
+    background: #0056b3; /* Dark blue background */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%; /* Full width within its parent container */
+}
