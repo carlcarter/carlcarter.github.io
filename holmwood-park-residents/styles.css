@@ -146,12 +146,6 @@ footer {
     transform: scale(1.05);
 }
 
-/* Action Block Styling */
-.action-block {
-    background: #ffe6e6; /* Light red to highlight urgency */
-    border-left: 6px solid #cc0000; /* A strong left border to emphasize importance */
-}
-
 /* Issues Grid */
 .issues-grid {
     display: flex;
@@ -159,24 +153,6 @@ footer {
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
-}
-
-/* Individual Issue Card */
-.issue-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 280px;
-    text-align: left;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-left: 5px solid #cc0000;
-}
-
-.issue-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive Layout */
