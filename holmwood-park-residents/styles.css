@@ -58,7 +58,7 @@ body {
 }
 
 .info-section h2, .info-section h3 {
-    color: #0056b3;
+    color: #ffffff;
     margin-top: 20px;
 }
 
@@ -193,6 +193,7 @@ footer {
     background: #0056b3; /* Dark blue background */
     color: white; /* White text for contrast */
     text-align: center;
+    padding: 15px;
     font-size: 1.5em;
     font-weight: bold;
     border-top-left-radius: 10px;
