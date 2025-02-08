@@ -3,36 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resident Takeover Guide</title>
+    <title>Holmwood Park Residents</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Resident Takeover Guide</h1>
-        <p>Empowering residents to take control of their estate management.</p>
+    <header>
+        <h1>Holmwood Park Residents</h1>
+        <p>Join us in taking an active role in our estate's management.</p>
+    </header>
 
-        <section class="section">
-            <h2>Step 1: Become a Member</h2>
-            <p>To vote on estate matters, you must become a Member of Holmwood Residents Limited.</p>
-            <a href="membership_application_letter.docx" class="download">Download Membership Application Letter</a>
-            <a href="membership_declaration.docx" class="download">Download Membership Declaration</a>
-        </section>
+    <section class="image-gallery">
+        <h2>Our Estate</h2>
+        <div class="gallery">
+            <img src="images/estate1.jpeg" alt="Estate Image 1">
+            <img src="images/estate1.jpeg" alt="Estate Image 2">
+        </div>
+    </section>
 
-        <section class="section">
-            <h2>Step 2: Become a Director</h2>
-            <p>Once you are a Member, you can apply to become a Director.</p>
-            <a href="director_application_letter.docx" class="download">Download Director Application Letter</a>
-        </section>
+    <section class="section">
+        <h2 onclick="toggleSection('membership')">➕ Become a Member</h2>
+        <div class="content" id="membership">
+            <p>To become a member and gain voting rights, copy the following letter and submit it to the company.</p>
+            <pre>
+Dear [Company Name],
+I [Your Name] residing at [Your Address] am requesting membership to Holmwood Residents Limited. 
+As a qualifying homeowner, I would like to be recognized as a voting member.
+Sincerely, 
+[Your Name]
+            </pre>
+        </div>
+    </section>
 
-        <section class="section">
-            <h2>Step 3: Request the List of Members</h2>
-            <p>To understand who has voting rights, request the company’s Register of Members.</p>
-            <a href="request_register_of_members.docx" class="download">Download Register of Members Request</a>
-        </section>
+    <section class="section">
+        <h2 onclick="toggleSection('director')">➕ Apply to Be a Director</h2>
+        <div class="content" id="director">
+            <p>If you wish to join the board as a director, submit the following letter:</p>
+            <pre>
+Dear [Company Name],
+I, [Your Name] of [Your Address], would like to put myself forward as a director of Holmwood Residents Limited.
+I believe my experience in [Your Expertise] will be beneficial to the community.
+Best Regards,  
+[Your Name]
+            </pre>
+        </div>
+    </section>
 
-        <footer>
-            <p>For assistance, contact us at <strong>[Your Contact Email]</strong></p>
-        </footer>
-    </div>
+    <section class="section">
+        <h2 onclick="toggleSection('members-list')">➕ Request a List of Members</h2>
+        <div class="content" id="members-list">
+            <p>To ensure transparency, you can request the list of existing members:</p>
+            <pre>
+Dear [Company Name],
+I formally request a copy of the register of members under my rights as a shareholder of Holmwood Residents Limited.
+Please provide this in line with the Companies Act 2006.
+Sincerely,  
+[Your Name]
+            </pre>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us at <strong>[Your Email]</strong> for any questions.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
