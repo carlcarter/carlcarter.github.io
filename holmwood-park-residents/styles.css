@@ -11,7 +11,7 @@ body {
 /* Hero Section */
 .hero {
     background: url('images/estate1.jpeg') no-repeat center center/cover;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,25 +23,6 @@ body {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-}
-
-/* Image Gallery */
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 30px;
-}
-
-.gallery img {
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
 }
 
 /* Info Section */
