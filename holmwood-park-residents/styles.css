@@ -206,8 +206,3 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover Effect */
-.benefit-card:hover {
-    transform: scale(1.05);
-}
-
