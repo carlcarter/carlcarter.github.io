@@ -95,6 +95,18 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Membership Qualification & Benefit Cards */
+.benefit-card-wide {
+    flex: 1 1 calc(100% - 20px);
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
 /* Qualified Members - Muted Green */
 .qualified {
     background: rgba(76, 175, 80, 0.2);
@@ -194,13 +206,6 @@ footer a:hover {
     transform: translateY(0);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .qualification-card, .benefit-card, .step-card {
-        flex: 1 1 100%;
-    }
-}
-
 /* Letter Styling */
 .letter-container {
     background: #ffffff;
@@ -239,5 +244,19 @@ footer a:hover {
     .letter-container {
         padding: 15px;
         font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .qualification-card, .benefit-card, .step-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .benefit-card-wide  {
+        flex: 1 1 100%;
     }
 }
