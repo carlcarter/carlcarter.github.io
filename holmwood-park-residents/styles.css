@@ -207,3 +207,7 @@ footer {
     box-sizing: border-box; /* Prevent unwanted width overflow */
     position: relative; /* Ensures it stays within the parent */
 }
+
+.inner-container {
+    padding: 20px;
+}
