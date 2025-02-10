@@ -160,6 +160,81 @@ body {
     margin-bottom: 10px;
 }
 
+/* Step List Styling */
+.step-list {
+    list-style: none;
+    counter-reset: list;
+    padding: 0 1rem;
+}
+
+.step-list li {
+    position: relative;
+    counter-increment: list;
+    max-width: 45rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem;
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+.step-list li::before {
+    --stop: calc(100% / var(--length) * var(--i));
+    --l: 62%;
+    --l2: 88%;
+    --c1: hsl(212, 71%, var(--l));
+    --c2: hsl(212, 71%, var(--l2));
+    
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+.step-list h3 {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem;
+    color: #0056b3;
+}
+
+.step-list h3::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    content: counter(list);
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #0056b3;
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 40em) {
+    .step-list li {
+        margin: 3rem auto;
+        padding: 3rem 2rem 2rem;
+    }
+    
+    .step-list h3 {
+        font-size: 2rem;
+        margin: 0 0 2rem;
+    }
+    
+    .step-list h3::before {
+        margin-right: 1.5rem;
+    }
+}
+
 /* Link Styling */
 .link-highlight {
     color: #0056b3;
