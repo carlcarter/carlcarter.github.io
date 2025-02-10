@@ -200,3 +200,44 @@ footer a:hover {
         flex: 1 1 100%;
     }
 }
+
+/* Letter Styling */
+.letter-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid #ddd;
+}
+
+/* Letter Sections */
+.letter-header,
+.letter-recipient,
+.letter-subject,
+.letter-body {
+    margin-bottom: 15px;
+}
+
+.letter-header p,
+.letter-recipient p,
+.letter-subject p {
+    margin: 3px 0;
+}
+
+/* Bold Subject Line */
+.letter-subject p {
+    font-weight: bold;
+}
+
+/* Make Letter Responsive */
+@media (max-width: 768px) {
+    .letter-container {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
