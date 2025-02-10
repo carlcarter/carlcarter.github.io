@@ -22,9 +22,8 @@ body {
     text-align: center;
 }
 
-/* Title */
 .hero h1 {
-    background: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+    background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     border-radius: 10px;
     max-width: 80%;
@@ -35,9 +34,8 @@ body {
     margin-bottom: 10px;
 }
 
-/* Opaque Text Background */
 .hero p {
-    background: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+    background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 1.2rem;
@@ -47,7 +45,7 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Info Section */
+/* Section Containers */
 .info-section {
     max-width: 1080px;
     margin: 40px auto;
@@ -56,55 +54,38 @@ body {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
-.info-section h2 {
-    color: #ffffff;
-    margin-top: 20px;
-}
-
-.info-section h3 {
-    color: #0f00e2;
-    margin-top: 20px;
-}
-
-.info-section ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* Footer Styling */
-footer {
-    margin-top: 30px;
-    padding: 20px;
-    background: #a4a4a4;
-    color: rgb(52, 46, 210);
+/* Section Headers */
+.section-header {
+    background: #4d514d; 
+    color: white;
     text-align: center;
-}
-
-/* Email Link Styling */
-.email-link {
-    color: #ffcc00; /* Bright yellow for contrast */
+    padding: 15px;
+    font-size: 1.5em;
     font-weight: bold;
-    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.email-link:hover {
-    text-decoration: underline;
-    color: #ffd700; /* Lighter gold when hovered */
+.inner-container {
+    padding: 20px;
 }
 
-/* Membership Qualification Section */
-.membership-container {
+/* Benefits & Issues Grid Layout */
+.issues-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
-    margin: 40px auto;
-    max-width: 900px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Qualification Cards */
-.qualification-card {
-    flex: 1 1 calc(25% - 20px); /* Three per row on desktop */
+/* Membership Qualification & Benefit Cards */
+.qualification-card, .benefit-card {
+    flex: 1 1 calc(25% - 20px);
     min-width: 250px;
     padding: 20px;
     border-radius: 15px;
@@ -116,37 +97,89 @@ footer {
 
 /* Qualified Members - Muted Green */
 .qualified {
-    background: rgba(76, 175, 80, 0.2); /* Soft green */
+    background: rgba(76, 175, 80, 0.2);
     border: 2px solid rgba(76, 175, 80, 0.5);
     color: #2d5a2f;
 }
 
 /* Non-Qualified Members - Muted Red */
 .not-qualified {
-    background: rgba(244, 67, 54, 0.2); /* Soft red */
+    background: rgba(244, 67, 54, 0.2);
     border: 2px solid rgba(244, 67, 54, 0.5);
     color: #7a2d2d;
 }
 
+/* Neutral Colour for General Benefits */
+.benefit-card {
+    background: rgba(200, 200, 200, 0.2);
+    border: 2px solid rgba(180, 180, 180, 0.5);
+    color: #333;
+}
+
 /* Hover Effect */
-.qualification-card:hover {
+.qualification-card:hover, .benefit-card:hover {
     transform: scale(1.05);
 }
 
-/* Issues Grid */
-.issues-grid {
+/* Membership Steps */
+.steps-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
     margin-top: 20px;
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .issue-card {
-        flex: 1 1 100%; /* Stack cards on smaller screens */
-    }
+.step-card {
+    flex: 1 1 calc(33% - 20px);
+    min-width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background: white;
+    border: 2px solid rgba(180, 180, 180, 0.5);
+}
+
+.step-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+.link-highlight {
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #0056b3;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.link-highlight:hover {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #a4a4a4;
+    color: rgb(52, 46, 210);
+    text-align: center;
+}
+
+footer a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffd700;
 }
 
 /* Fade-in Animation */
@@ -156,53 +189,14 @@ footer {
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* When in view, apply full opacity and reset transformation */
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Section Header Styling */
-.section-header {
-    background: #4d514d; /* Green background */
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 1.5em;
-    font-weight: bold;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 0; /* Ensure no unwanted margin */
-    width: 100%; /* Stretch full width of parent */
-    box-sizing: border-box; /* Prevent unwanted width overflow */
-    position: relative; /* Ensures it stays within the parent */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .qualification-card, .benefit-card, .step-card {
+        flex: 1 1 100%;
+    }
 }
-
-.inner-container {
-    padding: 20px;
-}
-
-/* Grid layout for benefits section */
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-
-/* Benefit Cards */
-.benefit-card {
-    flex: 1 1 calc(100% - 20px); /* Three per row on desktop */
-    min-width: 250px;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 1.1rem;
-    background: rgba(200, 200, 200, 0.2); /* Soft neutral colour */
-    border: 2px solid rgba(180, 180, 180, 0.5);
-    color: #333;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
