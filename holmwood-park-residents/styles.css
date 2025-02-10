@@ -193,7 +193,7 @@ footer {
 
 /* Benefit Cards */
 .benefit-card {
-    flex: 1 1 calc(25% - 20px); /* Three per row on desktop */
+    flex: 1 1 calc(100% - 20px); /* Three per row on desktop */
     min-width: 250px;
     padding: 20px;
     border-radius: 15px;
