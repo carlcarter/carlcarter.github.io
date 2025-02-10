@@ -122,7 +122,7 @@ body {
 }
 
 /* Neutral Colour for General Benefits */
-.benefit-card {
+.benefit-card, .benefit-card-wide {
     background: rgba(200, 200, 200, 0.2);
     border: 2px solid rgba(180, 180, 180, 0.5);
     color: #333;
