@@ -147,9 +147,6 @@ footer {
     .issue-card {
         flex: 1 1 100%; /* Stack cards on smaller screens */
     }
-    .benefits-grid {
-        grid-template-columns: 1fr; /* Stack items on smaller screens */
-    }
 }
 
 /* Fade-in Animation */
