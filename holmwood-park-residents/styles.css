@@ -334,3 +334,18 @@ footer a:hover {
         flex: 1 1 100%;
     }
 }
+
+/* Accordion */
+.accordion-header {
+    background: #ddd;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+}
